@@ -3,18 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <title>Link-in-bio</title>
-</head>
 
-<body>
   <style>
     * {
       border: 1px red dashed;
     }
+
+    body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .avatar-image {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 128px;
+    }
+
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+    }
+
   </style>
 
+</head>
+
+<body>
+  
   <div class="main-container">
     <div class="image-row">
-      <img src="/images/Main_picture.jpeg" alt="pic of me">
+      <img class="avatar-image" src="/images/Main_picture.jpeg" alt="pic of me">
     </div>
 
     <div class="name-row">Matthew F.</div>
@@ -28,23 +50,23 @@
 
     <div class="links-row">
       <div class="Link 1">
+        <img class="thumbnail" src="/images/Flag_of_Greece.svg.png" alt="greece flag">
         <a href="https://en.wikipedia.org/wiki/Greece" target="_blank">Greece</a>
-        <img src="/images/Flag_of_Greece.svg.png" alt="greece flag">
       </div>
       
       <div class="Link 2">
+        <img class="thumbnail" src="/images/Flag_of_France.svg.webp" alt="france flag">
         <a href="https://en.wikipedia.org/wiki/France" target="_blank">France</a>
-        <img src="/images/Flag_of_France.svg.webp" alt="france flag">
       </div>
       
       <div class="Link 3">
+        <img class="thumbnail" src="/images/Flag_of_Thailand.svg.png" alt="thailand flag">
         <a href="https://en.wikipedia.org/wiki/Thailand" target="_blank">Thailand</a>
-        <img src="/images/Flag_of_Thailand.svg.png" alt="thailand flag">
       </div>
       
       <div class="Link 4">
+        <img class="thumbnail" src="/images/Flag_of_the_Republic_of_China.svg.png" alt="taiwan flag">
         <a href="https://en.wikipedia.org/wiki/Taiwan" target="_blank">Taiwan</a>
-        <img src="/images/Flag_of_the_Republic_of_China.svg.png" alt="taiwan flag">
       </div>
     </div>
 
