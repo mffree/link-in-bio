@@ -3,11 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Link-in-bio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Roboto Condensed -->  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Libre Baskerville -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
 
   <style>
+    /*
     * {
       border: 1px red dashed;
     }
+    */
 
     html {
       min-height: 100%;
@@ -19,10 +36,13 @@
       padding-bottom: 40px;
       background: linear-gradient(90deg, #5b0821, #720a41, #8a0b6a, #a10d9d, #980eb9, #8010d0, #5e11e8, #3212ff);
       color: rgba(255, 255, 255, 1.0);
+      font-family: "Roboto Condensed";
+      font-weight: 900
     }
 
     a {
-      color: rgba(255, 255, 255, 1.0)
+      color: rgba(255, 255, 255, 1.0);
+      text-decoration: none;
     }
 
     .avatar-image {
@@ -41,10 +61,42 @@
 
     .item {
       background-color: rgb(116, 248, 145, 0.6);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      border-radius: 1000px;
+      padding: 5px;
+      padding-right: 53px;
+      box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.44);
+    }
+
+    .link-text {
+      text-align: center;
+      flex-grow: 1;
     }
 
     .main-container {
-      /* HEREEEE */
+      max-width: 640px;
+      margin: auto;
+    }
+
+    .image-row {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .name-row {
+      margin-bottom: 30px;
+      text-align: center;
+      font-family: "Libre Baskerville";
+      font-size: 24px;
+      font-weight: 900;
+    }
+
+    .social-icons-row {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-around;
     }
 
   </style>
@@ -61,29 +113,33 @@
     <div class="name-row">Matthew F.</div>
 
     <div class="social-icons-row">
-      <a href="https://www.instagram.com/heymfreeman/">Insta</a>
-      <a href="https://www.linkedin.com/in/mf63/">LinkedIn</a>
+      <a href="https://www.instagram.com/heymfreeman/">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/mf63/">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
     </div>
 
     <div class="links-row">
       <div class="item">
         <img class="thumbnail" src="/images/Flag_of_Greece.svg.png" alt="greece flag">
-        <a href="https://en.wikipedia.org/wiki/Greece" target="_blank">Greece</a>
+        <a class="link-text" href="https://en.wikipedia.org/wiki/Greece" target="_blank">Greece</a>
       </div>
       
       <div class="item">
         <img class="thumbnail" src="/images/Flag_of_France.svg.webp" alt="france flag">
-        <a href="https://en.wikipedia.org/wiki/France" target="_blank">France</a>
+        <a class="link-text" href="https://en.wikipedia.org/wiki/France" target="_blank">France</a>
       </div>
       
       <div class="item">
         <img class="thumbnail" src="/images/Flag_of_Thailand.svg.png" alt="thailand flag">
-        <a href="https://en.wikipedia.org/wiki/Thailand" target="_blank">Thailand</a>
+        <a class="link-text" href="https://en.wikipedia.org/wiki/Thailand" target="_blank">Thailand</a>
       </div>
       
       <div class="item">
         <img class="thumbnail" src="/images/Flag_of_the_Republic_of_China.svg.png" alt="taiwan flag">
-        <a href="https://en.wikipedia.org/wiki/Taiwan" target="_blank">Taiwan</a>
+        <a class="link-text" href="https://en.wikipedia.org/wiki/Taiwan" target="_blank">Taiwan</a>
       </div>
     </div>
 
