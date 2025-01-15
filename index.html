@@ -9,9 +9,20 @@
       border: 1px red dashed;
     }
 
+    html {
+      min-height: 100%;
+    }
+
     body {
+      min-height: 100%;
       padding-top: 40px;
       padding-bottom: 40px;
+      background: linear-gradient(90deg, #5b0821, #720a41, #8a0b6a, #a10d9d, #980eb9, #8010d0, #5e11e8, #3212ff);
+      color: rgba(255, 255, 255, 1.0);
+    }
+
+    a {
+      color: rgba(255, 255, 255, 1.0)
     }
 
     .avatar-image {
@@ -26,6 +37,14 @@
       height: 48px;
       border-radius: 48px;
       object-fit: cover;
+    }
+
+    .item {
+      background-color: rgb(116, 248, 145, 0.6);
+    }
+
+    .main-container {
+      /* HEREEEE */
     }
 
   </style>
@@ -47,22 +66,22 @@
     </div>
 
     <div class="links-row">
-      <div class="Link 1">
+      <div class="item">
         <img class="thumbnail" src="/images/Flag_of_Greece.svg.png" alt="greece flag">
         <a href="https://en.wikipedia.org/wiki/Greece" target="_blank">Greece</a>
       </div>
       
-      <div class="Link 2">
+      <div class="item">
         <img class="thumbnail" src="/images/Flag_of_France.svg.webp" alt="france flag">
         <a href="https://en.wikipedia.org/wiki/France" target="_blank">France</a>
       </div>
       
-      <div class="Link 3">
+      <div class="item">
         <img class="thumbnail" src="/images/Flag_of_Thailand.svg.png" alt="thailand flag">
         <a href="https://en.wikipedia.org/wiki/Thailand" target="_blank">Thailand</a>
       </div>
       
-      <div class="Link 4">
+      <div class="item">
         <img class="thumbnail" src="/images/Flag_of_the_Republic_of_China.svg.png" alt="taiwan flag">
         <a href="https://en.wikipedia.org/wiki/Taiwan" target="_blank">Taiwan</a>
       </div>
